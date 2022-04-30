@@ -1,0 +1,20 @@
+
+{
+    "region" : "eu-west-2",
+    "configuration" : "Debug",
+    "framework"     : "netcoreapp3.1",
+    "self-contained" : false,
+    "application"    : "AuthApi",
+    "environment"    : "AuthApi-prod",
+    "enable-xray"    : false,
+    "enhanced-health-type" : "basic",
+    "additional-options"   : "\"aws:autoscaling:launchconfiguration,SecurityGroups\"=\"sg-094b41a952b90ad21\";\"aws:ec2:vpc,Subnets\"=\"subnet-018ea78f6d9e6840e\"",
+    "solution-stack"       : "64bit Amazon Linux 2 v2.3.1 running .NET Core",
+    "environment-type"     : "SingleInstance",
+    "cname"                : "authapi-prod",
+    "instance-type"        : "t2.micro",
+    "key-pair"             : "",
+    "instance-profile"     : "aws-elasticbeanstalk-ec2-role",
+    "service-role"         : "aws-elasticbeanstalk-service-role",
+    "proxy-server"         : "none"
+}
